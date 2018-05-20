@@ -78,4 +78,6 @@ theme: my-theme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type:heroku
+  repo: 
+    repo: https://git.heroku.com/hexo-personal-website.git
