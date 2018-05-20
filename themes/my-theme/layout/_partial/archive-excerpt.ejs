@@ -1,0 +1,13 @@
+<% page.posts.each(function(post){ %>
+  <div>
+    <div>
+      <%= date(post.date, config.date_format) %>
+      <a href="<%- url_for(post.path) %>">     
+        <%= post.title %>
+      </a>
+    </div>
+  </div>
+<% }) %>
+</div>
+
+<%- css('css/partial/post-excerpt') %>

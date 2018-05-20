@@ -1,0 +1,22 @@
+<% page.posts.each(function(post){ %>
+  <div class="title">
+    <a href="<%- url_for(post.path) %>">
+      <%= post.title %>
+    </a>
+  </div>
+  <div class="date">
+    <%= date(post.date, config.date_format) %> 
+  </div>
+  <div class="excerpt">
+    <% if(post.excerpt) { %>
+      <%- post.excerpt %>
+      <a href="<%- url_for(post.path) %>" class="read-more">
+        ...Read More
+      </a>
+    <% } %>
+  </div>
+  <div class="line-break"></div>
+<% }) %>
+</div>
+
+<%- css('css/partial/post-excerpt') %>

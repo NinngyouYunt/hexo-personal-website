@@ -1,0 +1,9 @@
+.prev-page{
+  float:left
+}
+.next-page{
+  float:right
+}
+.page{
+  margin-bottom: 40px
+}

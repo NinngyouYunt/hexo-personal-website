@@ -1,0 +1,16 @@
+<nav class="page">
+    <% if (page.prev){ %>
+      <a href="<%- config.root %><%- page.prev_link %>" class="prev-page">
+        <- Prev
+      </a>
+    <% } %>
+    <% if (page.next){ %>
+      <a href="<%- config.root %><%- page.next_link %>" class="next-page">
+        Next ->
+      </a>
+    <% } %>
+</nav>
+
+<% if (page.total > 1) { %>
+  <%- css('css/partial/pagination') %>
+<% } %>

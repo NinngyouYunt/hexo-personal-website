@@ -1,0 +1,14 @@
+.title{
+  font-size:1.5em;
+  font-weight:bold;
+}
+.line-break{
+  border-bottom: 2px dashed rgba(31,38,38,0.3);
+  margin: 0px 0px 20px 0px;
+}
+.excerpt{
+  font-size:1em;
+}
+.read-more{
+  font-weight: bold;
+}
